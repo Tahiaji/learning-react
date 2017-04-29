@@ -10,6 +10,7 @@ export default class Sidebar extends Component {
                         <li><Link to='/'  activeClassName='active'>Home</Link></li>
                         <li><Link to='/about'  activeClassName='active'>About</Link></li>
                         <li><Link to='/contacts'  activeClassName='active'>Contacts</Link></li>
+                        <li><Link to='/users'  activeClassName='active'>Users</Link></li>
                     </ul>                       
                 </div>
 
