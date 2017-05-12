@@ -57,15 +57,16 @@ class Users extends Component {
                 
                          {
                         users.map((item, idx) => (
-                                <div  key={idx}>
+                                <div  key={idx} className="user-block">
                                     <UserItem                               
                                         user={item} 
+                                        color={idx%2==0?'#efefef':"#cecece"}
                                         isOpen={this.state.openId == idx}    
                                     />  
                                     {
                                     this.state.openId == idx?
-                                    <button  onClick={this.onMinus}>Minus</button>
-                                    : <button  onClick={()=>this.onPlus(idx)}>Plus</button>
+                                    <i  onClick={this.onMinus} className="fa fa-minus fa-3x user-icon" aria-hidden="true"></i> :
+                                    <i  onClick={()=>this.onPlus(idx)} className="fa fa-plus fa-3x user-icon" aria-hidden="true"></i>                                   
                                     }                                    
                                 </div>
                               ))
