@@ -18,7 +18,7 @@ const UserItem = (props) => {
               <div className="col-sm-3">{username}</div>
               <div className="col-sm-3">{cell}</div>              
               <div className="col-sm-2">{state}</div>
-    </div>;
+            </div>;
 
   }
   
@@ -39,8 +39,7 @@ const UserItem = (props) => {
                                 }
                             </span>
                         </h3>
-                    </div>
-                 
+                    </div>                 
                  </div>
                  <div className="row user-detailed">
                     <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -56,8 +55,7 @@ const UserItem = (props) => {
                         <span className="user-detailed-title">Email:</span> 
                         <span className="user-detailed-content"> {user.email}</span>
                       </div>                    
-                    </div>
-                    
+                    </div>                    
                     <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                       <div className="short-div">
                         <span className="user-detailed-title">Address:</span>
@@ -86,7 +84,9 @@ const UserItem = (props) => {
                         <span className="user-detailed-content"> {user.cell}</span>
                       </div>
                     </div>
-                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img className="img-circle" src={user.picture.large}/></div>
+                    <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img className="img-circle" src={user.picture.large}/>
+                    </div>
               </div>
            </Panel>        
         

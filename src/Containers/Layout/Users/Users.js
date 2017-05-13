@@ -19,7 +19,7 @@ class Users extends Component {
     }
     
     getUsers() {
-    fetch(`https://randomuser.me/api/?results=${numberOfUsers}&seed=1`, {
+    fetch(`https://randomuser.me/api/?results=${numberOfUsers}&seed=2`, {
       method: 'GET',
     }).then(response => {
       return response.json();      
@@ -36,11 +36,11 @@ class Users extends Component {
   }
 
     plus(id) {
-        console.log('plus');
+        //console.log('plus');
         this.setState({openId: id});
     }
     minus() {
-        console.log('minus');
+        //console.log('minus');
         this.setState({openId: null});
     }
 
